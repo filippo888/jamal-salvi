@@ -166,6 +166,7 @@ const Contact = () => {
                     style={{width: '-webkit-fill-available', height: 'auto'}}
                     onChange={handleChange}/>
         <Typography >Enter your mail:</Typography>
+        <Typography >Enter your mail:</Typography>
         <TextField 
                     id="outlined-basic" 
                     name='reply_to'
