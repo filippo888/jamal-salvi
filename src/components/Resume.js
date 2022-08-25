@@ -161,7 +161,7 @@ const Resume = () => {
                         research: "See Bachelor Thesis",
                         duration: "8 months",
                         recommendation: "See recommendation of: Nicolai Alexandrowski - Nordic Waves Group CEO",
-                        recommendationPath: "./NWG_recommendation.pdf",
+                        recommendationPath: "./Nicolai_recommendation - Jamal Salvi.pdf",
                     }
             }/>
             </Box>
@@ -171,10 +171,10 @@ const Resume = () => {
                     {
                         title: "Student Worker at AmiNIC",
                         caption: "Experiments Facilitations and Data Analysis",
-                        body: "I started a part-time occupation at AmiNIC, a tech start-up that is working on developing a sensor used to accurately determining the expiration date of meat and fish priducts in order to reduce waste. \n Particularly, I have been responsible for performing some experiments (data gathering) and partially analyze the results, giving a preliminary report to my supervisor. I also had the chance to set-up some experiments that I independently carried on. \n I also designed and 3D printed some fundamental parts, performed fluid-flow analysis, assembled and properly initialized devices and fixed some as well.",
+                        body: "I started a part-time occupation at AmiNIC, a tech start-up that is working on developing a sensor used to accurately determining the expiration date of meat and fish priducts in order to reduce waste. \n Particularly, I have been responsible for performing some experiments (data gathering) and partially analyze the results, giving a preliminary report to my supervisor. I also had the chance to set-up some experiments that I independently carried on. \n I also designed and 3D printed some fundamental parts, performed fluid-flow analysis, assembled and properly initialized devices and fixed some.",
                         duration: "1 years and 6 months",
-                        recommendation: "Simon Overgaard Høegh - R&D Program Managers",
-                        recommendationPath: "./ref1.pdf",
+                        recommendation: "See recommendation of: Simon Overgaard Høegh - R&D Program Managers",
+                        recommendationPath: "./Simon_Recommendation - Jamal Salvi.pdf",
                                         
                     }
             }/>
