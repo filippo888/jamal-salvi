@@ -92,7 +92,7 @@ const Header = () => {
             <Box container className={classes.typed}>
             <Typography  variant="h7">
                 <Typed
-                          strings={["Engineering", "Problem-solving", "Teamwork", "Creativity", "Blockchain Enthusiast", "Passion for Management", "Entrepreneurship and Innovation", "BSc in Mechatronics"]}
+                          strings={["Industry Experience", "Engineering", "Problem-solving", "Teamwork", "Creativity", "Blockchain Enthusiast", "Passion for Management", "Entrepreneurship and Innovation", "BSc in Mechatronics"]}
                     typeSpeed={40}
                     backSpeed={80}
                     loop
