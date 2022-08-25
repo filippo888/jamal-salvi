@@ -87,7 +87,7 @@ const AboutMe = () => {
 
     <Box className={classes.secondsContainerColor} >
     <AboutMePage val={{
-                    leftImage: false,
+                    leftImage: true,
                     withImage: true,
                     text: {  
                         caption: "Work",
