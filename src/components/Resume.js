@@ -210,10 +210,10 @@ const Resume = () => {
                     {
                         title: "Nursery school \"Nido Comunale di Locarno \" ",
                         caption: "Civil Worker as General Collaborator",
-                        body: "I have been a handyman but to summarize, 50% of my time was invested in taking care of some management and organization tasks for the principal, I made extensive use of Excel and Word and dealt with some optimization problems. \n The other 50% of the time I was a \"substitute teacher\", I took care of the kids and was responsible for them together with the educators (age ranging from 2 to 4).",
-                        duration: "1 year 6 months",
-                        recommendation: "Daniela Manfredi - Headmaster",
-                        research: false                    
+                        body: "I have been a handyman but to summarize, 50% of my time was invested in taking care of some management and organization tasks for the principal, I made extensive use of Excel and Word and dealt with some optimization problems. \n The other 50% of the time I was a \"substitute teacher\", I took care of the kids and was responsible for them together with the educators (age ranging from 1 to 3).",
+                        duration: "1 year",
+                        recommendation: "See recommendation of: Daniela Manfredi - Headmaster (with unofficial English translation)",
+                        recommendationPath: "./Daniela_Recommendation - Jamal Salvi.pdf",
                     }
             }/>
             </Box>
