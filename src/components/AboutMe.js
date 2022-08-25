@@ -85,7 +85,7 @@ const AboutMe = () => {
 
     </Box>
 
-    /*<Box className={classes.secondsContainer} >
+    <Box className={classes.secondsContainer} >
     <AboutMePage val={{
                     leftImage: false,
                     withImage: true,
@@ -102,7 +102,7 @@ const AboutMe = () => {
                 }}/>
                 
 
-    </Box>*/
+    </Box>
 
     <Box className={classes.secondsContainerColor} >
     <AboutMePage val={{
