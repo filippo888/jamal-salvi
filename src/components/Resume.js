@@ -156,12 +156,12 @@ const Resume = () => {
                      {
                         title: "Technical Developer at Nordic Waves Group",
                         caption: "Blockchain R&D",
-                        body: "For my last semester, I looked for an interesting opportunity to match with the writing of my Bachelor Thesis. This research brought me to Nordic Waves Group, a start-up that deals with circular economy and acts as a carbon offsetting credits retailer. \n Particualrly, I have been responsible for an extensive research on the feasibility of the tokenization of Offsetting Credits. This research allowed me to utilize my interest and knowledge of the blockchain technology while also allowing me to get familiar with some business aspects. \n I mapped out the Voluntary Carbon Market, pointed out sustainable blockchains protocols, investigated NFT technology, considered NWG's role in the space and more. My thoroughness and understanding granted me a grade of 12 on this research, which is the highest obtainable mark in the Danish grading system. ",
-                        researchPath: "./ref2.pdf",
-                        research: "Bachelor Thesis",
+                        body: "During my last semester, I looked for an interesting opportunity to match with the writing of my Bachelor Thesis. This research brought me to Nordic Waves Group, a start-up that deals with circular economy and acts as a carbon offsetting credits retailer. \n Particualrly, I have been responsible for an extensive research on the feasibility of the tokenization of Offsetting Credits. This research allowed me to utilize my interest and knowledge of the blockchain technology while also allowing me to get familiar with some business aspects. \n I mapped out the Voluntary Carbon Market, pointed out sustainable blockchains protocols, investigated NFT technology, considered NWG's role in the space and more. My thoroughness and understanding granted me a grade of 12 on this research, which is the highest obtainable mark in the Danish grading system. ",
+                        researchPath: "./Jamal_Salvi_Bachelor_Thesis.pdf",
+                        research: "See Bachelor Thesis",
                         duration: "8 months",
-                        recommendation: "Nicolai Alexandrowski - Nordic Waves Group CEO",
-                        recommendationPath: "./NWG.pdf",
+                        recommendation: "See recommendation of: Nicolai Alexandrowski - Nordic Waves Group CEO",
+                        recommendationPath: "./NWG_recommendation.pdf",
                     }
             }/>
             </Box>
