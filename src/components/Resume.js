@@ -140,7 +140,7 @@ const Resume = () => {
                      {
                         title: "Master in Entrepreneurship and Innovation",
                         caption: "Graduate Student at HULT International Business School",
-                        body: "Currently enrolled and following a Graduate Program in Entrepreneurship and Innovation, offered by HULT International Business School. Based in San Francisco (CA)",
+                        body: "Currently enrolled and following a Graduate Program in Entrepreneurship and Innovation, offered by HULT International Business School. Based in San Francisco (CA).",
 
                     }
             }/></Box>
@@ -241,7 +241,7 @@ const Resume = () => {
                     {
                         title: "Born",
                         caption: "Locarno",
-                        body: "Born on December the 4th, 1998, Locarno (Ticino), CH",
+                        body: "Born on December the 4th, 1998, Locarno (Ticino), CH.",
                         duration: false,
                         recommendation: false,
                         research: false                    
