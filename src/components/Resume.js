@@ -223,8 +223,8 @@ const Resume = () => {
                     {
                         title: "High School Degree",
                         caption: "Economics",
-                        body: "Acquired the Switzerland National diploma at Liceo Cantonale Locarno (LiLo).",
-                        duration: false,
+                        body: "Acquired the Switzerland National Diploma at Liceo Cantonale di Locarno (LiLo). I followed the \"Economy and Law curriculum\" ",
+                        duration: "4 years",
                         recommendation: false,
                         research: false                    
                     }
