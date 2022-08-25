@@ -94,7 +94,7 @@ const Header = () => {
                 <Typed
                           strings={["Industry Experience", "Engineering", "Problem-solving", "Teamwork", "Creativity", "Blockchain Enthusiast", "Passion for Management", "Entrepreneurship and Innovation", "BSc in Mechatronics"]}
                     typeSpeed={40}
-                    backSpeed={80}
+                    backSpeed={120}
                     loop
                     />
             </Typography>
