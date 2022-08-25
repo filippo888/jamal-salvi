@@ -141,6 +141,25 @@ const AboutMe = () => {
 
           </Box>
 
+          <Box className={classes.secondsContainerColor} >
+              <AboutMePage val={{
+                  leftImage: false,
+                  withImage: true,
+                  text: {
+                      caption: "Story",
+                      title: "Early life",
+                      body: "I was born on December the 4th, in Locarno (Tessin, Switzerland). The italian-speaking part of Switzerland is truly wonderful, awesome landscapes, warm climate in summer that allows you to bath in the lakes or rivers that are all across the area and cold snowy climate in winter that allows you to ski in the beautiful mountains. I spent the first years of my life here, from being just a toddler to becoming a young 19-years - old adult. ",
+                  },
+                  image: {
+                      title: "Locarno",
+                      body: "A picture of Locarno (Tessin, CH), my hometown",
+                      imagePath: "Locarno_pic_1998.jpg"
+                  },
+              }} />
+
+
+          </Box>
+
     <Footer/>
     </>
     )
