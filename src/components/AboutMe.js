@@ -51,7 +51,7 @@ const AboutMe = () => {
     <Box  className={classes.firstContainer} >
          
         <AboutMePage val={{
-                    withImage: false,
+                    withImage: true,
                     leftImage: true,
                     text: {  
                         caption: "Studies",
