@@ -78,7 +78,7 @@ const AboutMe = () => {
                     image:{
                         title: "Third place at the SDU autonomous-case competition",
                         body: "[...] To be filled",
-                        imagePath: "/SDU_hackaton_pic_2019.jpg"
+                        imagePath: "/SDU_hackaton_pic_2019_2.jpg"
                     },
                 }}/>
                 
