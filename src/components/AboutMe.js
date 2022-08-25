@@ -120,7 +120,27 @@ const AboutMe = () => {
                     }}/>
  
 
-    </Box>
+          </Box>
+
+    <Box className={classes.secondsContainerColor} >
+    <AboutMePage val={{
+                    leftImage: true,
+                    withImage: true,
+                    text: {
+                        caption: "Studies",
+                        title: "High-School",
+                        body: "In Switzerland, education is mandatory until the end of the so-called \"middle school\" (equivalent of 9th grade). After that, teenagers can decide whether they wish to continue studying, hence going to High-School for 4 more years, or if they wish to take a different route, perhaps starting a technical education. Given my interest in certain academic topics(and quite frankly, the fear of having to pick a career at such a young age) I decided to enroll in High - School.Particularly, I decided to follow a curriculum called \"Economy and Law\", which to summarize gave me a first introduction to civic law and macro and micro economics.",
+                    },
+                    image: {
+                        title: "Liceo di Locarno",
+                        body: "A picture of me and some of my classmates, on a High-School organized trip",
+                        imagePath: "/High_School_pic.jpg"
+                    },
+                    }} />
+
+
+          </Box>
+
     <Footer/>
     </>
     )
