@@ -140,7 +140,7 @@ const Resume = () => {
                      {
                         title: "Master in Entrepreneurship and Innovation",
                         caption: "Graduate Student at HULT International Business School",
-                        body: "[...] To be filled",
+                        body: "Currently enrolled and following a Graduate Program in Entrepreneurship and Innovation, offered by HULT International Business School. Based in San Francisco (CA)",
 
                     }
             }/></Box>
