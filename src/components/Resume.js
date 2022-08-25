@@ -191,10 +191,10 @@ const Resume = () => {
                     {
                         title: "Bachelor of Science in Mechatronics",
                         caption: "Student of Mechatronics at SDU",
-                        body: "During my education I learned a lot of theory about mechatronics products, ranging from thermodynamics and other physics topics to 3D modelling and simulation, to embededd programming and neural networks.  \n I also undertook a project for each semester, these projects usually consisted in building simple robots or machines.  \n The practicality of the program helped me to fully integrate and understand the practical aspects of the engineering process and allowed me to have a \"reality-check\" - meaning understanding the limitations of the theory (that mostly deals with ideal, non-real-life conditions) and how to practically compensate for them. ",
+                        body: "During my education I learned a lot of theory about mechatronics products, ranging from thermodynamics and other physics topics to 3D modelling and simulation, to embededd programming and neural networks.  \n I also undertook a project for each semester, these projects usually consisted in building simple robots or autonomous machines.  \n The hands-on nature of the program helped me to fully integrate and understand the practical aspects of the engineering process and allowed me to have a \"reality-check\", meaning understanding the limitations of the theory (which deals mostly with ideal, non-real conditions) and how to properly compensate for them.",
                         duration: "3 years",
-                        recommendation: "Roana Melina de Oliveira Hansen - Associate Professor at SDU",
-                        research: false                    
+                        recommendation: "See recommendation of: Roana Melina de Oliveira Hansen - Associate Professor at SDU",
+                        recommendationPath: "./Roana_Recommendation - Jamal Salvi.pdf",
                     }
             }/>
             </Box>
