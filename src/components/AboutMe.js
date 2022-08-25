@@ -104,19 +104,18 @@ const AboutMe = () => {
 
     </Box>
 
-    <Box className={classes.secondsContainerColor} >
+    <Box className={classes.secondsContainer} >
     <AboutMePage val={{
                     withImage: true,
                     leftImage: false,
                     text: {  
                         caption: "Personal Interest",
-                        title: "Business",
-                        body: "You can apply for a range of merit-based scholarships that reward your achievements and potential. So whether you’re an academic high achiever, an aspiring entrepreneur, or have a demonstrated aptitude to lead—there could be a scholarship for you at Hult.",
+                        title: "New Interests",
+                      body: "2017 was maybe the first year when I got truly passionate about something. Particularly, I discovered Bitcoin and consequently the blockchain technology. I quickly became very fond of it and spent hours of my free time trying to understand first the concept of decentralization and public ledger, then the idea of mining, then cryptography basics, and so on and so forth. Not much later, I also discovered Ethereum and a whole new world opened to my eyes, Smartcontracts, DeFi, NFTs, DAOs, layer-two solutions, and so on. This technology never ceases to amaze me and the developer working on it are finding more interesting and innovative ways to apply it almost on a daily basis.I truly do believe that blockchain is here to stay. This passion pushed me to write my final High School paper(in 2018) about Bitcoin and its price. I won't lie, I was feeling very good about it while writing it but looking back, it was a just partially correct research and very biased (due to my emotions about the tech). Nontheless I fondly keep this memory with me as schooling my own teacher about a new technology that he doesn't know about and honestly quite despised has been a quite interesting experience.",
                     },
                     image:{
-                        title: "Campus",
-                        body: "You can apply for a range of merit-based scholarships that reward your achievements and potential. ",
-                        imagePath: "/HULT.jpeg"
+
+                        imagePath: "/BTC_pic_2017.jpg"
                     },
                     }}/>
  
