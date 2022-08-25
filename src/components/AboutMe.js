@@ -129,7 +129,7 @@ const AboutMe = () => {
                     text: {
                         caption: "Studies",
                         title: "High-School",
-                        body: "In Switzerland, education is mandatory until the end of the so-called \"middle school\" (equivalent of 9th grade). After that, teenagers can decide whether they wish to continue studying, hence going to High-School for 4 more years, or if they wish to take a different route, perhaps starting a technical education. Given my interest in certain academic topics(and quite frankly, the fear of having to pick a career at such a young age) I decided to enroll in High - School.Particularly, I decided to follow a curriculum called \"Economy and Law\", which to summarize gave me a first introduction to civic law and macro and micro economics.",
+                        body: "In Switzerland, education is mandatory until the end of the so-called \"middle school\" (equivalent of 9th grade). After that, teenagers can decide whether they wish to continue studying, hence going to High-School for 4 more years, or if they wish to take a different route, perhaps starting a technical education. Given my interest in certain academic topics (and honestly, the fear of having to pick a career at such a young age) I decided to enroll in High-School. Particularly, I decided to follow a curriculum called \"Economy and Law\", which to summarize gave me a first introduction to civic law and macro/micro economics.",
                     },
                     image: {
                         title: "Liceo di Locarno",
@@ -141,14 +141,14 @@ const AboutMe = () => {
 
           </Box>
 
-          <Box className={classes.secondsContainerColor} >
+          <Box className={classes.secondsContainer} >
               <AboutMePage val={{
                   leftImage: false,
                   withImage: true,
                   text: {
                       caption: "Story",
                       title: "Early life",
-                      body: "I was born on December the 4th, in Locarno (Tessin, Switzerland). The italian-speaking part of Switzerland is truly wonderful, awesome landscapes, warm climate in summer that allows you to bath in the lakes or rivers that are all across the area and cold snowy climate in winter that allows you to ski in the beautiful mountains. I spent the first years of my life here, from being just a toddler to becoming a young 19-years - old adult. ",
+                      body: "I was born on December the 4th, in Locarno (Tessin, Switzerland). The italian-speaking part of Switzerland is truly wonderful, awesome landscapes, warm climate in summer that allows you to bath in lakes and rivers that are all across the area and cold snowy climate in winter that allows you to ski in the beautiful mountains. I spent the first years of my life here, from being just a toddler to becoming a young 19-years-old adult. ",
                   },
                   image: {
                       title: "Locarno",
