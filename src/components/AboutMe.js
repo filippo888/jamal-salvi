@@ -96,7 +96,7 @@ const AboutMe = () => {
                     },
                     image:{
                         title: "Nido Comunale",
-                        body: "This is he nursery school where I worked",
+                        body: "This is the nursery school where I worked",
                         imagePath: "/Nido_pic_2018.jpg"
                     },
                 }}/>
