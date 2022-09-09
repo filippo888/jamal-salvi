@@ -18,27 +18,25 @@ import AboutMePage  from './AboutMePage'
 
 const useStyles = makeStyles(theme => ({
     firstContainer:{
-        background: "linear-gradient(319deg, #00ffbd82, transparent)",
+        background: "linear-gradient(85deg, #e6ebed, #636466)",
         paddingTop: "60px",
         minHeight: "80vh",
         display: "flex"
     },
     secondsContainer:{
-        background: "transparent",
+        background: "trasparent",
   
         flexGrow:1,
         minHeight: "80vh",
         display: "flex"
     },
     secondsContainerColor:{
-        background: "#ccf6ff",
+        background: "linear-gradient(85deg, #e6ebed, #636466)",
 
         flexGrow:1,
         minHeight: "80vh",
         display: "flex"
     },
-
-
 }))
 
 const AboutMe = () => {
@@ -160,7 +158,7 @@ const AboutMe = () => {
 
           </Box>
 
-    <Footer/>
+    
     </>
     )
   }

@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
     mainContainer:{
         height: "90vh",
-        background: "linear-gradient(319deg, #00ffbd82, transparent)",
+        background: "linear-gradient(85deg, #e6ebed, #636466)",
         display: "flex",
         justifyContent: "space-evenly",
         flexDirection: "row",
@@ -42,6 +42,7 @@ const useStyles = makeStyles(theme => ({
     },
     textContainer:{
         display: "flex",
+        width: "30vh",
         alignContent: "space-evenly",
         flexDirection: "column",
         alignItems: "center",
@@ -68,7 +69,7 @@ const useStyles = makeStyles(theme => ({
 
   
 
-const Header = () => {
+const Home = () => {
     const classes = useStyles()
   return (
 
@@ -111,4 +112,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Home
