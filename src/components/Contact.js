@@ -5,23 +5,39 @@ import {
     Typography,
     Box,
     Divider,
+    Button
 } from "@material-ui/core"
 import { TextField } from '@mui/material';
 import { ClassNames } from '@emotion/react';
 import { makeStyles } from '@material-ui/core/styles'
+import { grey } from '@mui/material/colors';
 
 const useStyles = makeStyles(theme => ({
     mainContainer:{
+      minHeight: "80vh",
+      width: "40vh",
+      display: "flex",
+      alignItems: "center",
+      alignContent: "space-around",
+      flexDirection: "column",
+      justifyContent: "space-around",
+      marginTop: "80px",
+
+},
+secondaryContainer:{
     display: "flex",
-    height: "100vh",
     alignContent: "space-around",
     alignItems: "center",
     justifyContent: "space-around",
-    height: "87vh",
+    
     flexDirection: "column",
-    padding: "15%",
+   
 
 },
+
+mr:{
+  margin: "10px"
+}
 
 
 }))
@@ -125,6 +141,21 @@ const Contact = () => {
   const onSubmitF = (e) => {
     e.preventDefault();
 
+    if (toSend.from_name.trim() === ""){
+      alert('Insert your name!')
+      return
+    }
+
+    if (toSend.message.trim() === ""){
+      alert('Insert your message!')
+      return
+    }
+
+    if (toSend.reply_to.trim() === ""){
+      alert('Insert your mail!')
+      return
+    }
+
     send(
       'service_hjt0m1y',
       'template_wl01e0g',
@@ -132,23 +163,26 @@ const Contact = () => {
       'iwRD4vw442rYGhcHW'
     )
       .then((response) => {
+        alert('Mail successfully send!')
         console.log('SUCCESS!', response.status, response.text);
+        
+        
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        alert('Something went wrong, retry...')
       });
   };
 
   return (
-    
+    <div className={classes.secondaryContainer}> 
     <form onSubmit={onSubmitF}>
         <Box className={classes.mainContainer}>
 
-        <Typography > Contact me </Typography>
-        <Typography > Need to get in touch with me? fill out the form.</Typography>
+        <Typography className={classes.mr} variant="h5" component="div" > Contact me </Typography>
+        <Typography className={classes.mr} variant="body2" sx={{ mb: 1.5}} > Need to get in touch with me? fill out the form.</Typography>
 
-
-        <Typography >Enter your name:</Typography>
+        <Typography className={classes.mr} >Enter your name:</Typography>
         <TextField 
                     id="outlined-basic" 
                     name='from_name'
@@ -157,30 +191,32 @@ const Contact = () => {
                     style={{width: '-webkit-fill-available', height: 'auto'}}
                     onChange={handleChange}/>
 
-        <Typography >Enter message:</Typography>
+        <Typography className={classes.mr}>Enter message:</Typography>
         <TextField 
                     id="outlined-basic" 
                     name='message'
                     label="message" 
                     variant="outlined" 
+                    multiline="true"
                     style={{width: '-webkit-fill-available', height: 'auto'}}
                     onChange={handleChange}/>
-        <Typography >Enter your mail:</Typography>
-        <Typography >Enter your mail:</Typography>
+        <Typography className={classes.mr} >Enter your mail:</Typography>
         <TextField 
+                    
                     id="outlined-basic" 
                     name='reply_to'
                     label="mail" 
-                    variant="outlined" 
+                    variant="outlined"
                     style={{width: '-webkit-fill-available', height: 'auto'}}
                     onChange={handleChange}/>
 
-    
-
-        <button type='submit' >Submit </button>
+  
+        <Button className={classes.mr}variant="outlined" type='submit' >Submit </Button>
+   
     
     </Box>
     </form>
+    </div>
     )
     }
   

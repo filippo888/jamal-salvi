@@ -5,8 +5,8 @@ import {Grid } from "@material-ui/core";
 
 import ResponsiveAppBar from './components/ResponsiveAppBar'
 
-
-import Home from "./components/Index";
+import Footer from './components/Footer'
+import Home from "./components/Home";
 import Resume from "./components/Resume";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
@@ -29,6 +29,7 @@ function App() {
       <Route path="/aboutMe" element={<AboutMe/>}/>
       <Route path="/contact" element={<Contact/>}/>
     </Routes>
+    <Footer/>
 
     </>
   );

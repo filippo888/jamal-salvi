@@ -15,7 +15,7 @@ import CardContent from '@mui/material/CardContent';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "#ccf6ff",
+        background: "linear-gradient(85deg, #e6ebed, #636466)",
         paddingTop: "4rem",
 
         
@@ -258,7 +258,7 @@ const Resume = () => {
                 
         </Box>
     </Box>
-    <Footer/>
+
     
 
     </>
