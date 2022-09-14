@@ -18,7 +18,7 @@ import CardContent from '@mui/material/CardContent';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "#A6E3E9",
+        background: "linear-gradient(90deg,  #abd7fe,  #73abe0)",
         paddingTop: "4rem",
 
         

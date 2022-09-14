@@ -20,15 +20,15 @@ const useStyles = makeStyles(theme => ({
 
     mainContainer:{
         height: "90vh",
-        background: "#CBF1F5",
+        background: "linear-gradient(90deg,  #abd7fe,  #e5f3ff)",
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         flexDirection: "row",
         alignItems: "center",
         
 
         [theme.breakpoints.down("sm")]: {
-            justifyContent: "space-evenly",
+            justifyContent: "center",
             flexDirection: "column",
             alignItems: "center"
             },
@@ -46,7 +46,8 @@ const useStyles = makeStyles(theme => ({
         alignContent: "space-evenly",
         flexDirection: "column",
         alignItems: "center",
-        fontWeight: "900"
+        fontWeight: "900",
+        paddingBottom: "25px"
         
     },
     typed:{

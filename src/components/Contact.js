@@ -16,7 +16,7 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 const useStyles = makeStyles(theme => ({
 
 secondaryContainer:{
-    background: "#CBF1F5",
+    background: "linear-gradient(90deg,  #abd7fe,  #73abe0)",
     display: "flex",
     alignContent: "space-around",
     alignItems: "center",
@@ -201,12 +201,12 @@ const Contact = () => {
  
       }}>
 
-        <Typography className={classes.mr} variant="h3" component="div" > Contact me </Typography>
+        <Typography className={classes.mr} variant="h3"  > Contact me </Typography>
 
         <Card  sx={{ padding: "15px", borderRadius: 10, boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)"}}>
           <CardContent className={classes.card}>
 
-          <Typography className={classes.typed} variant="h7"  > Want to get in touch with me? Fill out the form! The e-mail is sent to to jamal.salvi@gmail.com.  
+          <Typography className={classes.typed} variant="h7"  > Want to get in touch with me? Fill out the form! The e-mail is sent to jamal.salvi@gmail.com.  
           </Typography>
 
         

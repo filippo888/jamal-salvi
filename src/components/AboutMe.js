@@ -16,7 +16,7 @@ import AboutMePage  from './AboutMePage'
 
 const useStyles = makeStyles(theme => ({
     firstContainer:{
-        background: "#71C9CE",
+        background: "linear-gradient(90deg,  #abd7fe,  #73abe0)",
         minHeight: "100vh",
         display: "flex"
     },
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
         display: "flex"
     },
     secondsContainerColor:{
-        background: "#71C9CE",
+        background: "linear-gradient(90deg,  #abd7fe,  #73abe0)",
 
         flexGrow:1,
         minHeight: "100vh",
