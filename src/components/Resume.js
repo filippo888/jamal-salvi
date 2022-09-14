@@ -157,7 +157,7 @@ const useStyles = makeStyles(theme => ({
 const Resume = () => {
     const classes = useStyles()
     const current = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:'numeric', minute:"numeric" };
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const date = current.toLocaleDateString('en-US', options)
     // expected output (varies according to local timezone): Donnerstag, 20. Dezember 2012
     /*`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;*/
@@ -169,7 +169,7 @@ const Resume = () => {
         <Box component="div" className={classes.timeLine}>
         <Box component="div" className={classes.firstBox} >
             <Typography
-                variant="h2"
+                variant="h1"
                 sx={{ width: 200}}
                 className={`${classes.timeLineItemFirst}`}>  
                 {date}
