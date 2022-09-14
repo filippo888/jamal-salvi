@@ -19,7 +19,7 @@ import { dividerClasses } from '@mui/material'
 const useStyles = makeStyles(theme => ({
 
     mainContainer:{
-        height: "100vh",
+        height: "90vh",
         background: "linear-gradient(90deg,  #abd7fe,  #e5f3ff)",
         display: "flex",
         justifyContent: "center",

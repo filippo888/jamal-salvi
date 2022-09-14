@@ -42,8 +42,8 @@ const useStyles = makeStyles((theme) => ({
       marginRight: 'auto',
       width: '100%',
       marginLeft: 'auto',
-      marginTop: theme.spacing(3),
-      marginBottom: theme.spacing(2),
+      marginTop: theme.spacing(1),
+      marginBottom: theme.spacing(1),
       
     },
     link:{
