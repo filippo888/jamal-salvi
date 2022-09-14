@@ -1,10 +1,13 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
+
 import {
     Typography,
     Box,
     Divider,
 } from "@material-ui/core"
+
+
 import ResponsiveAppBar from './ResponsiveAppBar'
 import { grey } from '@mui/material/colors';
 import Footer from './Footer'
@@ -15,7 +18,7 @@ import CardContent from '@mui/material/CardContent';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "linear-gradient(85deg, #e6ebed, #636466)",
+        background: "#A6E3E9",
         paddingTop: "4rem",
 
         
@@ -46,10 +49,36 @@ const useStyles = makeStyles(theme => ({
             },
         },
     },
+    firstBox:{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center"
+    },
+
+    timeLineItemFirst:{
+        border: "2px solid",
+        borderColor: grey[800],
+        borderRadius: "10px",
+
+        textAlign: "center",
+        position: "relative",
+        margin: "1rem 1rem 1rem 1rem",
+        clear: "both",
+        maxWidth: "none",
+        fontSize: "1.8rem",
+        color: grey[800],
+        background: "white",
+        lineHeight: 1,
+        padding: "0.5rem 1rem",
+        width: "fit-content"
+ 
+        
+             
+    },
     timeLineItem: {
-       
-        boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
-       
+
+
+
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
@@ -80,6 +109,10 @@ const useStyles = makeStyles(theme => ({
         },
     },
     timeLineYear: {
+        border: "2px solid",
+        borderColor: grey[800],
+        borderRadius: "10px",
+
         textAlign: "center",
         maxWidth: "11.375rem",
         margin: "0 3rem 0 auto",
@@ -97,6 +130,9 @@ const useStyles = makeStyles(theme => ({
             "&:nth-of-type(2n)": {
                 float: "none",
                 margin: "0 auto",
+                border: "2px solid",
+                borderColor: grey[800],
+                borderRadius: "10px",
             },
             "&:nth-of-type(2n):before": {
                 display: "none",
@@ -121,20 +157,24 @@ const useStyles = makeStyles(theme => ({
 const Resume = () => {
     const classes = useStyles()
     const current = new Date();
-    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:'numeric', minute:"numeric" };
+    const date = current.toLocaleDateString('en-US', options)
+    // expected output (varies according to local timezone): Donnerstag, 20. Dezember 2012
+    /*`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;*/
   
   return (
     <>
     
     <Box component="div" className={classes.mainContainer}>
         <Box component="div" className={classes.timeLine}>
-            
+        <Box component="div" className={classes.firstBox} >
             <Typography
                 variant="h2"
-                className={`${classes.timeLineYear} ${classes.timeLineItem}`}>  
+                sx={{ width: 200}}
+                className={`${classes.timeLineItemFirst}`}>  
                 {date}
             </Typography>
-
+            </Box>
             <Box component="div" className={classes.timeLineItem}>
             <ResumeCard val={
                      {
@@ -143,7 +183,8 @@ const Resume = () => {
                         body: "Currently enrolled and following a Graduate Program in Entrepreneurship and Innovation, offered by HULT International Business School. Based in San Francisco (CA).",
 
                     }
-            }/></Box>
+            }/>
+            </Box>
 
             <Typography
                 variant="h2"
@@ -239,7 +280,7 @@ const Resume = () => {
             <Box component="div" className={classes.timeLineItem}>
             <ResumeCard val={
                     {
-                        title: "Born",
+                        title: "Birth",
                         caption: "Locarno",
                         body: "Born on December the 4th, 1998, Locarno (Ticino), CH.",
                         duration: false,

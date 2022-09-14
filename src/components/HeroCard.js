@@ -10,7 +10,7 @@ import { grey } from '@mui/material/colors';
 
 const card = (
   <React.Fragment>
-    <CardContent >
+    <CardContent>
       
 
       <Typography variant="h5" component="div">
@@ -30,7 +30,7 @@ const card = (
       </Typography>
     </CardContent>
     <CardActions >
-      <Button size="big" sx={{color:grey[800]}} >Contact</Button>
+      <Button size="big" href='\contact' sx={{color:grey[800]}} >Contact</Button>
     </CardActions>
   </React.Fragment>
 );
@@ -38,7 +38,7 @@ const card = (
 export default function HeroCard() {
   return (
     <Box sx={{ maxWidth: { xs: 375, md: 675 } }}>
-      <Card variant="">{card}</Card>
+      <Card sx={{ padding: "15px", borderRadius: 10, boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)"}} variant="">{card}</Card>
     </Box>
   );
 }

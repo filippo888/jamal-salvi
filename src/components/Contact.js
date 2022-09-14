@@ -1,30 +1,22 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import {
-    Typography,
-    Box,
-    Divider,
-    Button
-} from "@material-ui/core"
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 import { TextField } from '@mui/material';
 import { ClassNames } from '@emotion/react';
 import { makeStyles } from '@material-ui/core/styles'
 import { grey } from '@mui/material/colors';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 const useStyles = makeStyles(theme => ({
-    mainContainer:{
-      minHeight: "80vh",
-      width: "40vh",
-      display: "flex",
-      alignItems: "center",
-      alignContent: "space-around",
-      flexDirection: "column",
-      justifyContent: "space-around",
-      marginTop: "80px",
 
-},
 secondaryContainer:{
+    background: "#CBF1F5",
     display: "flex",
     alignContent: "space-around",
     alignItems: "center",
@@ -34,9 +26,29 @@ secondaryContainer:{
    
 
 },
+btn:{
+  color:grey[800]
+},
 
 mr:{
-  margin: "10px"
+  margin: "10px",
+  textAlign: "center"
+},
+
+typed:{
+  color: grey[700],
+  fontWeight: "100",
+  margin: "10px",
+  textAlign: "center",
+  paddingBottom: "30px"
+},
+
+card:{
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "flex-start"
+
 }
 
 
@@ -44,6 +56,7 @@ mr:{
 
 
 const Contact = () => {
+    /*<Button><ContentCopyIcon fontSize="small"/></Button>*/
     const classes = useStyles()
     /*
       function sendEmail(e) {
@@ -174,45 +187,64 @@ const Contact = () => {
       });
   };
 
+
+
   return (
     <div className={classes.secondaryContainer}> 
     <form onSubmit={onSubmitF}>
-        <Box className={classes.mainContainer}>
+        <Box  sx={{ maxWidth: { xs: 375, md: 635 },
+        minHeight: "80vh",
+         marginTop: "80px",
+         display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around"
+ 
+      }}>
 
-        <Typography className={classes.mr} variant="h5" component="div" > Contact me </Typography>
-        <Typography className={classes.mr} variant="body2" sx={{ mb: 1.5}} > Need to get in touch with me? fill out the form.</Typography>
+        <Typography className={classes.mr} variant="h3" component="div" > Contact me </Typography>
 
-        <Typography className={classes.mr} >Enter your name:</Typography>
-        <TextField 
-                    id="outlined-basic" 
-                    name='from_name'
-                    label="name" 
-                    variant="outlined" 
-                    style={{width: '-webkit-fill-available', height: 'auto'}}
-                    onChange={handleChange}/>
+        <Card  sx={{ padding: "15px", borderRadius: 10, boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)"}}>
+          <CardContent className={classes.card}>
 
-        <Typography className={classes.mr}>Enter message:</Typography>
-        <TextField 
-                    id="outlined-basic" 
-                    name='message'
-                    label="message" 
-                    variant="outlined" 
-                    multiline="true"
-                    style={{width: '-webkit-fill-available', height: 'auto'}}
-                    onChange={handleChange}/>
-        <Typography className={classes.mr} >Enter your mail:</Typography>
-        <TextField 
-                    
-                    id="outlined-basic" 
-                    name='reply_to'
-                    label="mail" 
-                    variant="outlined"
-                    style={{width: '-webkit-fill-available', height: 'auto'}}
-                    onChange={handleChange}/>
+          <Typography className={classes.typed} variant="h7"  > Want to get in touch with me? Fill out the form! The e-mail is sent to to jamal.salvi@gmail.com.  
+          </Typography>
 
-  
-        <Button className={classes.mr}variant="outlined" type='submit' >Submit </Button>
-   
+        
+          <TextField 
+
+                      id="outlined-basic" 
+                      name='from_name'
+                      label="given names" 
+                      variant="outlined" 
+                      style={{width: '-webkit-fill-available', height: 'auto', margin: '5px'}}
+                      onChange={handleChange}/>
+
+
+          <TextField 
+                      id="outlined-basic" 
+                      name='message'
+                      label="message" 
+                      variant="outlined" 
+                      multiline="true"
+                      style={{width: '-webkit-fill-available', height: 'auto', margin: '5px'}}
+                      onChange={handleChange}/>
+          <Typography  sx={{ mb: 1.5 , margin: '5px'}} color="text.secondary" >Enter your e-mail address:</Typography>
+          <TextField 
+                      
+                      id="outlined-basic" 
+                      name='reply_to'
+                      label="e-mail" 
+                      variant="outlined"
+                      style={{width: '-webkit-fill-available', height: 'auto', margin: '5px'}}
+                      onChange={handleChange}/>
+
+    
+          <Button sx={{color:grey[800],  marginTop: '15px'}} size="big" type='submit'>Send </Button>
+            
+        </CardContent>
+      
+      </Card>
+    
     
     </Box>
     </form>

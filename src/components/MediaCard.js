@@ -19,15 +19,15 @@ export default function MediaCard(props) {
   return (
     <>
     {  props.val.withImage ? (
-        <Card sx={{ maxWidth: 345, minWidth: 345,
+        <Card sx={{ width: 345, margin: "20px",boxShadow: "0 8px 40px -12px rgba(0,0,0,0.4)"}} className={classes.card}>
 
-         }} className={classes.card}>
         <CardMedia
           component="img"
-          image= {props.val.image.imagePath}//"/static/images/cards/contemplative-reptile.jpg"
+          image= {props.val.image.imagePath} //"/static/images/cards/contemplative-reptile.jpg"
           alt={props.val.title}
         />
-        <CardContent>
+
+        <CardContent sx={{display:props.val.image.not_caption? 'none':'inherit'}}>
           <Typography gutterBottom variant="h5" component="div">
           {props.val.image.title}
           </Typography>

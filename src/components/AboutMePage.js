@@ -1,19 +1,15 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import {
-    Typography,
-    Box,
-    Divider,
-    Grid
-} from "@material-ui/core"
 
-import ResponsiveAppBar from './ResponsiveAppBar'
-import { grey } from '@mui/material/colors';
-import Footer from './Footer'
-import ResumeCard from './ResumeCard'
+import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import Paper from '@mui/material/Paper' 
+import Grid from '@mui/material/Grid';
 import CardContent from '@mui/material/CardContent';
+
+import Typography from '@mui/material/Typography';
+
+
+import { grey } from '@mui/material/colors';
 
 import MediaCard  from './MediaCard'
 
@@ -31,25 +27,16 @@ const useStyles = makeStyles(theme => ({
         }
     },
 
-    textContainer:{
-        width: "250px",
-        boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
-        [theme.breakpoints.up("md")]:
-        {
-            width: "650px",
-        }
-        
-    },
+
     caption:{
         color: grey[700]
     },
-    text:{
-        margin: theme.spacing(4)
-    },
+    
     mainCont:{
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    paddingBlock: "90px"
     }
 }))
 
@@ -66,7 +53,7 @@ const AboutMePage = (props) => {
         </Grid>
 
         <Grid item sx={3}> 
-            <Card variant="" className={classes.text} sx={{ maxWidth: 645 }}>
+            <Card variant="" sx={{ maxWidth: 645, margin: "20px", padding: "15px", borderRadius: 10, boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)"}}>
                 <CardContent >
                     <Box className={classes.caption}>
                     <Typography sx={{ mb: 1.5 }} >
@@ -88,7 +75,7 @@ const AboutMePage = (props) => {
         
         <Grid container spacing={1} className={classes.mainCont}>
             <Grid item sx={3}> 
-                <Card variant="" className={classes.text} sx={{ maxWidth: 645}}>
+                <Card variant="" sx={{ margin: "20px", padding: "15px", borderRadius: 10, maxWidth: 645}}>
                     <CardContent >
                         <Box className={classes.caption}>
                         <Typography sx={{ mb: 1.5 }} >

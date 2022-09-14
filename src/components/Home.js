@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
     mainContainer:{
         height: "90vh",
-        background: "linear-gradient(85deg, #e6ebed, #636466)",
+        background: "#CBF1F5",
         display: "flex",
         justifyContent: "space-evenly",
         flexDirection: "row",
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     cardContainer:{
-        boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)"
+        margin: "10px"
     },
     textContainer:{
         display: "flex",
@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
 
     },
     divider:{
-        width: "160%",
+        width: "130%",
         marginBottom:"10%",
         marginTop:"10%"
     }

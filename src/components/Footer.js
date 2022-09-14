@@ -14,19 +14,19 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 const menuItems = [
     {
         listIcon: <FacebookIcon/>,
-        listPath: "/FacebookIcon"
+        listPath: "https://www.facebook.com/jamal.salvi"
     },
     {
         listIcon: <LinkedInIcon/>,
-        listPath: "/LinkedInIcon"
+        listPath: "https://www.linkedin.com/in/jamal-salvi-275b64216/"
     },
     {
         listIcon: <InstagramIcon/>,
-        listPath: "/InstagramIcon"
+        listPath: "https://www.instagram.com/jaaaaamy/"
     },
     {
         listIcon: <AlternateEmailIcon/>,
-        listPath: "/AlternateEmailIcon"
+        listPath: "/contact"
         
     }
   ]
@@ -63,7 +63,7 @@ return (
         <Box py={6} display="flex" flexWrap="wrap" alignItems="center" className={classes.rootBox}>
           <Box component="nav" className={classes.footerNav}>
             {menuItems.map((page) => (
-            <MenuItem key={page.listText} component={Link} to={page.listPath}>
+            <MenuItem key={page.listText} component={Link} href={page.listPath}>
               <ListItemIcon className={classes.link} > {page.listIcon}</ListItemIcon>
             </MenuItem>
             ))}</Box>
