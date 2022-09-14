@@ -19,7 +19,7 @@ export default function MediaCard(props) {
   return (
     <>
     {  props.val.withImage ? (
-        <Card sx={{ width: 345, margin: "20px",boxShadow: "0 8px 40px -12px rgba(0,0,0,0.4)"}} className={classes.card}>
+        <Card sx={{ width: 346, margin: "20px",boxShadow: "0 8px 40px -12px rgba(0,0,0,0.4)"}} className={classes.card}>
 
         <CardMedia
           component="img"

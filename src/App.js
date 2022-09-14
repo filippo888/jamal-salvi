@@ -16,7 +16,7 @@ import {Route, Routes} from "react-router-dom"
 function App() {
   
   useEffect(() => {
-    document.title = "Jamal Salvi - Home";
+    document.title = "Jamal Salvi";
   }, []);
   
   return (
